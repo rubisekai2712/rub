@@ -4,13 +4,12 @@ app = Flask(__name__)
 PORT = int(os.environ.get("PORT", 5000))
 login_data = {
     "username": "rub2712",
-    "email": "", # ho?c dùng mail d? mail thì thôi username 
+    "email": "",
     "password": {
         "value": "nguyen3452", 
         "repeat": ""
     }
 }
-login_url = "https://www.mcserverhost.com/api/login"
 sub_url = "https://www.mcserverhost.com/api/servers/1d1d65c4/subscription" 
 def run_automation():
     session = requests.Session()
